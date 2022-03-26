@@ -31,8 +31,8 @@ This is a solution to the [Profile Card Component Challenge on Frontend Mentor](
 
 ### Links
 
-- View my Solution on [Frontend Mentor](https://your-solution-url.com)
-- View the Live Site [here](https://your-live-site-url.com)
+- View my Solution on [Frontend Mentor](https://www.frontendmentor.io/solutions/profile-card-component-with-css-grid-and-flexbox-By55o32zq)
+- View the Live Site [here](https://kxnzx.github.io/profile-card-component/)
 
 ## My process
 
