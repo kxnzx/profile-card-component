@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 38vw bottom 50vh, left 34vw top 48vh;
+  font-family: "Kumbh Sans", sans-serif;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: right 45vw bottom 50vh, left 50vw top 49vh;
+  }
+}
+body .card {
+  position: relative;
+  background-color: #fff;
+  max-width: 22rem;
+  text-align: center;
+  padding: 5.313rem 6.875rem 1.688rem;
+  border-radius: 15px;
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+body .card .card_profile-picture {
+  display: block;
+  border-radius: 50%;
+  width: 7rem;
+  height: auto;
+  overflow: hidden;
+  border: solid #fff 5px;
+  display: block;
+  margin: 0 auto;
+}
+body .card .name {
+  font-size: 1.125rem;
+  color: #2d3248;
+  padding-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+body .card .name .age {
+  font-weight: 400;
+  color: #969696;
+  margin-left: 0.375rem;
+}
+body .card .city {
+  font-size: 0.938rem;
+  color: #969696;
+  margin-bottom: 1.875rem;
+}
+body .card .line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1.5px solid rgba(150, 150, 150, 0.2);
+}
+body .card .card_statistics {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.375rem;
+}
+body .card .card_statistics .card_statistics_list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+body .card .card_statistics .card_statistics_list-item .stats {
+  color: #2d3248;
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: inline-block;
+  width: 3.813rem;
+}
+body .card .card_statistics .card_statistics_list-item .item {
+  color: #969696;
+  font-size: 0.688rem;
+  letter-spacing: 0.063rem;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+}
+body footer .attribution {
+  color: #40dae8;
+}
+body footer .attribution a {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

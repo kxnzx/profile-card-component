@@ -1,0 +1,145 @@
+// GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+// VARIABLES
+// Colors
+// primary colors
+$clr_dark_cyan: #19a2ae;
+$clr_dark_blue: #2d3248;
+$clr_dark_grayish_blue: #6a6f81;
+// neutral colors
+$clr_dark_gray: #969696;
+// Typography
+// font-family
+$ff: "Kumbh Sans", sans-serif;
+// font-weight
+$fw_bold: 700;
+$fw_normal: 400;
+// font-size
+$fs: 1.125rem;
+// Breakpoints
+$mobile: 640px;
+$tablet: 768px;
+$xl_tablet: 960px;
+$desktop: 1024px;
+// MIXINS
+@mixin border-radius {
+  border-radius: 15px;
+}
+// RESET
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+// STYLES
+body {
+  display: grid;
+  place-items: center;
+  background-color: $clr_dark_cyan;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 38vw bottom 50vh, left 34vw top 48vh;
+  @media screen and (min-width: $desktop) {
+    background-position: right 45vw bottom 50vh, left 50vw top 49vh;
+  }
+  font-family: $ff;
+  .card {
+    position: relative;
+    background-color: #fff;
+    max-width: 22rem;
+    text-align: center;
+    padding: 5.313rem 6.875rem 1.688rem;
+    @include border-radius;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .card_profile-picture {
+      display: block;
+      border-radius: 50%;
+      width: 7rem;
+      height: auto;
+      overflow: hidden;
+      border: solid #fff 5px;
+      display: block;
+      margin: 0 auto;
+    }
+    .name {
+      font-size: $fs;
+      color: $clr_dark_blue;
+      padding-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+      .age {
+        font-weight: $fw_normal;
+        color: $clr_dark_gray;
+        margin-left: 0.375rem;
+      }
+    }
+    .city {
+      font-size: 0.938rem;
+      color: $clr_dark_gray;
+      margin-bottom: 1.875rem;
+    }
+    .line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-bottom: 1.5px solid rgba(150, 150, 150, 0.2);
+    }
+    .card_statistics {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2.375rem;
+      .card_statistics_list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.375rem;
+        .stats {
+          color: $clr_dark_blue;
+          font-weight: $fw_bold;
+          font-size: $fs;
+          display: inline-block;
+          width: 3.813rem;
+        }
+        .item {
+          color: $clr_dark_gray;
+          font-size: 0.688rem;
+          letter-spacing: 0.063rem;
+        }
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    .attribution {
+      color: #40dae8;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
